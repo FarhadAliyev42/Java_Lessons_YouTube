@@ -1,4 +1,4 @@
-package Lesson56_OOP_usageOfStatic;
+package Lesson59_OOP_usageOfStatic;
 
 public class Student {
     public String name; 

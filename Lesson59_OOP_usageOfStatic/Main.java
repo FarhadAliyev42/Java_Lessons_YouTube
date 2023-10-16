@@ -1,4 +1,4 @@
-package Lesson56_OOP_usageOfStatic;
+package Lesson59_OOP_usageOfStatic;
 
 public class Main {
     public static void main(String[] args){
