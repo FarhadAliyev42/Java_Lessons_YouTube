@@ -40,7 +40,10 @@ public class Game {
             default: 
                 location = new SafeHouse(player, null);
         }
-        location.getLocation(); 
+        if(!location.getLocation()){
+            System.out.println("Game Over!"); 
+            break; 
+        } 
     }
     } 
 } 
