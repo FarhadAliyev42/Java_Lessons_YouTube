@@ -18,7 +18,7 @@ public class Game {
     public void start(){ 
         while(true){
         System.out.println(); 
-        System.out.println("=============="); 
+        System.out.println("========================"); 
         System.out.println(); 
         System.out.println("Please select location: "); 
         System.out.println("1. Secure Home --> Secure Place belongs to You, No Enemy!"); 
@@ -35,10 +35,20 @@ public class Game {
 
         switch(selectLoc){
             case 1: 
-                location = new SafeHouse(player, null);
+                location = new SafeHouse(player); 
                 break; 
+            case 2: 
+                location = new Cave(player); 
+                break; 
+            case 3: 
+                break;
+            case 4: 
+                break; 
+            case 5:
+                location = new ToolStore(player); 
+                break;
             default: 
-                location = new SafeHouse(player, null);
+                location = new SafeHouse(player);
         }
         if(!location.getLocation()){
             System.out.println("Game Over!"); 

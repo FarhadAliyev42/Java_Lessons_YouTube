@@ -8,6 +8,7 @@ public class Player {
     
     public Player(String name){
         this.name = name; 
+        this.inventory = new Inventory(); 
     }
 
     public void selectChar(){
@@ -29,6 +30,10 @@ public class Player {
         }
 
         System.out.println("Selected Character: " + getCharName() + " \t " + "Damage: " + getDamage() + " \t " + "Health: " + getHealth() + " \t " + "Money: " + getMoney());
+    }
+
+    public int getTotalDamage(){
+        return this.getDamage() + this.getInventory().getDamage(); 
     }
 
     public int charMenu(){
